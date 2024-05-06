@@ -296,6 +296,7 @@ a {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        align-items:center;
     }
 
     .hebergements {

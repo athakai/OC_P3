@@ -53,6 +53,102 @@ body {
     color: var(--main-bg-color)
 }
 
+
+
+/* AJOUTS STEPH */
+.menu {
+    display:flex;
+    padding:0;
+    justify-content: right;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    display:block;
+    min-width: 120px;
+    text-decoration: none;
+    text-align: center;
+    padding-top:20px;
+ }  
+ 
+.m:hover {
+    border:3px solid white;
+    color:#0065FC;
+    border-top-color: #0065FC;
+}
+
+.rechercher {
+    background-color: #0065FC;
+    border-radius: 0px 20px 20px 0px;
+    color: white;
+    padding: 10px;
+   
+}
+
+input {
+    height:34px;
+    width:500px;
+}
+
+.formulaire {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.r1 {
+    background-color:#F2F2F2;
+    height: 40px;
+    width:60px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.fa-location-dot {
+    position: absolute;
+    left: 120px;
+    top: 270px;
+    z-index:2;
+}
+
+.fa-circle-info {
+    margin:10px;
+}
+
+.filtres {
+    display:flex;
+    flex-direction:row;
+    padding:20px;
+
+    align-items:center;
+    column-gap: 20px;;
+}
+
+button {
+    border-radius: 20px 20px 20px 20px;
+    border-color:#F2F2F2;
+    border-style:solid;
+    width:fit-content;
+    height: 40px;
+    background-color:white;
+}
+
+.rechercher a {
+    text-decoration:none;
+    color:white;
+}
+
+button:hover {
+    background-color:#DEEBFF;
+    color:#0065FC;
+}
+
+.fa-money-bill-1, .fa-people-roof, .fa-heart, .fa-fire-flame-curved {
+    margin-right:10px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -69,7 +165,85 @@ body {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    height: 700px;
 }
+
+.hebergements .card_heber .card img {
+    width: 240px;
+    height: 115px;
+    border-radius: 20px;
+}
+
+.hebergements .card_heber .card {
+    margin-bottom: 20px;
+    width:240px ;
+    height: 240px;
+}
+
+.card_heber {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom: 10px;
+}
+
+
+
+
+.hebergements h2 h3 {
+    margin-bottom:20px;
+}
+
+.activite {
+    width: 300px;
+    height: 440px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.vignette {
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1);
+    width:fit-content;
+}
+
+.activites_marseille {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.footer {
+    display:flex;
+    flex-direction: row;
+    column-gap:20%;
+    background-color: #F2F2F2;
+    max-width: 1440px;
+    padding-inline: 20px;
+    margin-top: 20px;
+    max-height: 200px;
+}
+
+.activites_marseille h4 {
+    text-align: left;
+    margin: 10px;
+}
+
+.f1 .f2 .f3 {
+    display: flex;
+    justify-content: right;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+
+/* AJOUTS STEPH */
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -108,6 +282,7 @@ body {
     margin-bottom: 4px;
 }
 
+
 .populaires-cards .card-subtitle {
     margin: 0;
 }
@@ -121,6 +296,7 @@ body {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        align-items:center;
     }
 
     .hebergements {
