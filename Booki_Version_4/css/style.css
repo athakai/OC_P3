@@ -53,6 +53,89 @@ body {
     color: var(--main-bg-color)
 }
 
+/****** Menu et logo dans le header ***********/
+
+.menu {
+    display:flex;
+    flex-direction:row;
+    align-items:column;
+    justify-content: flex-end;
+    column-gap: 5%;
+}
+
+.m {
+    padding-top: 10px;
+}
+
+.menu a {
+    text-decoration:none;
+    color: black;
+}
+
+.m:hover {
+    border-top:3px solid #0065FC;
+    color:#0065FC;
+}
+
+
+.logo img {
+    max-width:10%;
+    max-height:5%;
+}
+
+.formulaire {
+    display:flex;
+    flex-direction:row;
+    column-gap:0px;
+    max-width:25%;
+    max-height:40px;
+}
+
+.icon_localisation {
+    background-color:#F2F2F2;
+    border-radius:20px 0px 0px 20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    min-width:50px;
+    height:40px;
+}
+
+.icon_localisation i {
+    position:relative;
+    top:25%;
+ 
+}
+
+.button_recherche button {
+    background-color:#0065FC;
+    border-radius: 0px 20px 20px 0px;
+    width:fit-content;
+    height: 40px;
+    border-color: #0065FC;
+}
+
+button a {
+    color:white;
+    text-decoration:none;
+}
+
+.text_recherche input {
+    width:fit-content;
+    height: 35px;
+}
+
+::placeholder {
+    font-weight:bold;
+}
+
+.infos {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    column-gap: 5px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -64,6 +147,35 @@ body {
     border-radius: 20px;
     padding: 35px;
     box-sizing: border-box;
+}
+
+.filtres {
+    display:flex;
+    flex-direction:row;
+    column-gap:10px;
+    align-items:center;
+    margin-top:20px;
+}
+
+.filtres button {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    column-gap:5px;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #DEEBFF;
+    width:fit-content;
+    padding-left:10px;
+    padding-right:10px;
+    height: 30px;
+}
+
+.filtres button:hover {
+    background-color: #DEEBFF;
+}
+
+.filtres a {
+    text-decoration:none;
 }
 
 /****** Hebergements ***********/
