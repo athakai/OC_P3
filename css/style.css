@@ -71,10 +71,11 @@ body {
     min-width: 120px;
     text-decoration: none;
     text-align: center;
+    padding-top:20px;
  }  
  
 .m:hover {
-    border:2px solid white;
+    border:3px solid white;
     color:#0065FC;
     border-top-color: #0065FC;
 }
@@ -108,7 +109,7 @@ input {
 .fa-location-dot {
     position: absolute;
     left: 120px;
-    top: 250px;
+    top: 270px;
     z-index:2;
 }
 
@@ -125,12 +126,18 @@ input {
     column-gap: 20px;;
 }
 
-.filtres button {
+button {
     border-radius: 20px 20px 20px 20px;
-    border-color:2px solid #DEEBFF;
-    width: 200px;
+    border-color:#F2F2F2;
+    border-style:solid;
+    width:fit-content;
     height: 40px;
     background-color:white;
+}
+
+.rechercher a {
+    text-decoration:none;
+    color:white;
 }
 
 button:hover {
@@ -219,7 +226,7 @@ button:hover {
 }
 
 .activites_marseille h4 {
-    text-align: center;
+    text-align: left;
     margin: 10px;
 }
 
