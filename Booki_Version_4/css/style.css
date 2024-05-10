@@ -217,8 +217,8 @@ button {
 }
 
 .h_card img {
-    width: 240px; /* L'image s'adapte à la largeur de la vignette */
-    height: 150px; /* Garantit que l'image conserve ses proportions */
+    width: 240px; 
+    height: 150px; 
     display: block; /* Permet de régler la marge automatique */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -369,6 +369,101 @@ button {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+
+    .filtres {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+       
+    }
+
+    .filtres {
+        display:flex;
+        flex-direction:row;
+        column-gap:10px;
+        align-items:center;
+        margin-top:20px;
+    }
+    
+    .filtres button {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        column-gap:5px;
+        border-radius: 20px 20px 20px 20px;
+        border-color: #DEEBFF;
+        width:fit-content;
+        padding-left:10px;
+        padding-right:10px;
+        height: 30px;
+    }
+
+    .text_filtres {
+        grid-column-start:1;
+        grid-column-end: 5;
+    }
+
+    h2, h3 {
+        font-size: 80%;
+    }
+
+    
+   .hebergements_cards {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .h_card {
+    background-color:white;
+    max-width:100%;
+    max-height:auto;
+    border-radius: 20px 20px 20px 20px;
+    padding: 2px 2px 2px 2px;
+    display:flex;
+    flex-direction:column;
+    column-gap: 10px;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin:10px;
+}
+
+.h_card img {
+    width: 100%; 
+    height: 120px; 
+    display: block; /* Permet de régler la marge automatique */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+.a_card img {
+    width: 100%; /* L'image s'adapte à la largeur de la vignette */
+    height: 200px; /* Garantit que l'image conserve ses proportions */
+    display: block; /* Permet de régler la marge automatique */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.a_card {
+     
+    background-color:white;
+    max-width:20%;
+    max-height:270px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 2px 2px 2px 2px;
+    display:flex;
+    flex-direction:row;
+    column-gap: 10px;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin:10px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1);
+    display:block;       
+}  
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -389,7 +484,7 @@ button {
     }
 
     .populaires-cards .card {
-        width: 30%;
+        max-width: 30%;
     }
 
     .populaires-cards .card-title {
@@ -403,5 +498,153 @@ button {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+   body {
+        background-image:url("../images/logo/Booki.png");
+        background-position: 50% 0%;
+        background-repeat: no-repeat; 
+        background-size:25%;
+    }
+
+    .menu {
+        margin-top:50px;
+        background-image:none;
+    }
+
+    .menu_header {
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:stretch;
+    }
+
+    .formulaire {
+       display:grid;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .filtres {
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+    }
+
+    .filtres {
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .text_filtres {
+        grid-column-start: 1;
+        grid-column-end:4;
+    }
+
+    .button_recherche button {
+        background-color:#0065FC;
+        border-radius: 10px 10px 10px 10px;
+        width:40px;
+        height: 40px;
+        border-color: #0065FC;
+        color:white;
+        background-image:url("../images/search-12-16.png");
+        font-size:0;
+        background-size:auto;
+        background-position:center;
+        background-repeat:no-repeat;
+        cursor:pointer;
+        padding:0;
+    }
+
+    .hebergements-and-populaires {
+        display:flex;
+        flex-direction:column-reverse;
+    }
+    
+    .populaires-cards {
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        width:335px;
+    }
+    
+    .populaires-cards img {
+        width: 37%;
+        height: 134px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    .populaires-cards .card-content {
+        width: 63%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+     .hebergements_cards {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .h_card {
+    background-color:white;
+    max-width:100%;
+    max-height:auto;
+    border-radius: 20px 20px 20px 20px;
+    padding: 2px 2px 2px 2px;
+    display:flex;
+    flex-direction:column;
+    column-gap: 10px;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin:10px;
+}
+
+.h_card img {
+    width: 100%; 
+    height: 120px; 
+    display: block; /* Permet de régler la marge automatique */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+.a_card img {
+    width: 100%; /* L'image s'adapte à la largeur de la vignette */
+    height: 200px; /* Garantit que l'image conserve ses proportions */
+    display: block; /* Permet de régler la marge automatique */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.a_card {
+     
+    background-color:white;
+    max-width:20%;
+    max-height:270px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 2px 2px 2px 2px;
+    display:flex;
+    flex-direction:row;
+    column-gap: 10px;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin:10px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1);
+    display:block;       
+}  
+
+
+    
+
     
 }
