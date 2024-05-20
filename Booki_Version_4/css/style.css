@@ -262,7 +262,7 @@ button {
 .a_card {
      
         background-color:white;
-        max-width:300px;
+        max-width:100%;
         max-height:440px;
         border-radius: 20px 20px 20px 20px;
         padding: 2px 2px 2px 2px;
@@ -513,7 +513,7 @@ button {
 
    body {
         background-image:url("../images/logo/Booki.png");
-        background-position: 50% 0%;
+        background-position: 50% 30px;
         background-repeat: no-repeat; 
         background-size:25%;
         padding:5px;
@@ -526,20 +526,24 @@ button {
     }
 
     .menu {
-        margin-top:50px;
+        margin-top:60px;
         background-image:none;
+        max-width: 100%;
+        margin-bottom:-40px;
     }
 
     .menu_header {
         display:flex;
         flex-direction:row;
-        justify-content: center; 
+        justify-content: space-around; 
         width:100%;  
     }
 
     .m {
         padding-bottom: 10px;
         width:100%;
+        flex-grow: 1;
+        text-align:center;
     }
     
     .m:hover {
@@ -554,6 +558,10 @@ button {
        grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .info_text p {
+        font-size:16px;
+    }
+
     .filtres {
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -564,6 +572,8 @@ button {
         margin-left: auto;
         margin-right:auto;
         padding:5px;
+        margin-bottom:-20px;
+        margin-top:-10px;
     }
     /* revenir ici pour aligner les boutons (marges à droite et gauche) */
 
@@ -608,6 +618,9 @@ button {
     grid-row:3;
     }
 
+    .icon_localisation {
+        border-radius:15px 0px 0px 15px;
+    }
 
     .button_recherche button {
         background-color:#0065FC;
@@ -686,6 +699,7 @@ button {
     flex-wrap:wrap;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding-bottom:20px;
+    margin-left:-5px;
     }
 
     .hebergements_cards {
@@ -708,13 +722,17 @@ button {
         line-height: 10px;
     }
 
+    .recherche_titre h2 {
+        font-size: 22px;
+    }
+
     .h_card .card-content {
         height:40%;
     }
 
     .a_card img {
-    width:210px;
-    height:141px;
+    width:315px;
+    height:140px;
     display: block; 
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -744,9 +762,7 @@ button {
         margin:10px;
     }
 
-    .a_card a {
-        font-size:80%;
-    }
+    
 
     /* FOOTER */
 
