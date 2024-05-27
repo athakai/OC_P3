@@ -516,7 +516,7 @@ button {
         background-position: 50% 30px;
         background-repeat: no-repeat; 
         background-size:25%;
-        padding:5px;
+    
     }
 
     .main-container {
@@ -533,8 +533,9 @@ button {
         width: 100%;
         height: 100%;
         padding:10px;
-      
     }
+
+   
 
     header nav {
         flex-direction: column;
@@ -570,10 +571,11 @@ button {
     }
 
     .m {
-        padding-bottom: 10px;
+        padding-bottom: 15px;
         width:100%;
         flex-grow: 1;
         text-align:center;
+        padding-top:50px;
     }
     
     .m:hover {
@@ -650,6 +652,8 @@ button {
 
     .icon_localisation {
         border-radius:15px 0px 0px 15px;
+        position:relative;
+        bottom:1px;
     }
 
     .button_recherche button {
@@ -670,6 +674,12 @@ button {
         border:none;
         position:relative;
         right:10px;
+        bottom:2px;
+    }
+
+    .text_recherche input {
+        border:none;
+        outline:#F2F2F2 2px solid;
     }
 
     .hebergements-and-populaires {
@@ -742,6 +752,7 @@ button {
    
     .h_card img {
     max-width: 100%; 
+    object-fit: cover;
     height: 124px; 
     display: block; 
     border-top-left-radius: 20px;
@@ -760,38 +771,42 @@ button {
         height:40%;
     }
 
+    
+    
     .a_card img {
-    width:315px;
-    height:140px;
-    display: block; 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+        width: 315px; 
+        max-height:max-content;
+        display: block; 
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
     }
 
-    .a_card {
-    background-color:white;
-    max-width:100%;
-    max-height:100%;
-    border-radius: 20px 20px 20px 20px;
-    padding: 2px 2px 2px 2px;
-    display:flex;
-    flex-direction:row;
-    column-gap: 10px;
-    justify-content:space-evenly;
-    flex-wrap:wrap;
-    margin:10px;
-    display:block;       
+    .a_card {   
+        background-color:white;
+        max-width:100%;
+        max-height:max-content;
+        border-radius: 20px 20px 20px 20px;
+        padding: 2px 2px 2px 2px;
+        display:flex;
+        flex-direction:row;
+        column-gap: 10px;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+        margin:10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display:block;    
+        padding:0px;  
+      
     }  
 
     .activites_marseille {
+        max-width:100%;
         display:flex;
         flex-direction:column;
-        justify-content:space-around;
         align-items:center;
         flex-wrap:wrap;
-        margin:10px;
     }
-
     
 
     /* FOOTER */
@@ -813,4 +828,64 @@ footer {
 
 
     
+}
+
+
+/* Large devices (Large desktop) */
+@media (min-width: 1024px) and (max-width: 1442px) {
+    .h_card img {
+        width:100%;
+        max-height: 124px;
+    }
+
+   .hebergements_cards {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
+   .h_card {
+    background-color:white;
+    max-width:250px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 2px 2px 2px 2px;
+    display:flex;
+    flex-direction:column;
+    column-gap: 10px;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin:10px;
+}
+
+.a_card img {
+    width: 100%; 
+    height: 380px; 
+    display: block; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.a_card {
+     
+    background-color:white;
+    max-width:20%;
+    max-height:440px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 2px 2px 2px 2px;
+    display:flex;
+    flex-direction:row;
+    column-gap: 10px;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    margin:10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display:block;       
+}  
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
 }
