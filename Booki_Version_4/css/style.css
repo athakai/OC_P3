@@ -70,7 +70,9 @@ nav {
     height: 80px;
 }
 
-
+::placeholder {
+    color:black;
+}
 
 .m {
     padding-top: 10px;
@@ -110,6 +112,10 @@ nav {
     position:relative;
     top:25%;
  
+}
+
+.fa-location-dot-color {
+    color:black;
 }
 
 .button_recherche button {
@@ -259,6 +265,12 @@ button {
     margin:10px;
 }
 
+.am {
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+
 .a_card {
      
         background-color:white;
@@ -350,6 +362,9 @@ button {
     margin-bottom: 7px;
 }
 
+a {
+    font-size:80%;
+}
 
 /* FOOTER */
 
@@ -410,9 +425,10 @@ button {
     }
 
     h2, h3 {
-        font-size: 80%;
+        font-size: 60%;
     }
 
+  
     
    .hebergements_cards {
     display:grid;
